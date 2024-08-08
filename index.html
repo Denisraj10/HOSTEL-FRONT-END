@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">SJC Hostel Form</h1>
+    <form action="/submit-form" method="post" enctype="multipart/form-data">
+        <div class="wrapperTop">
+        <div class="image">
+            <label for="image"><img src="assets/images/user.png" alt="" height="200" width="200"></label>
+            <input type="file" id="image" name="image" style="display: none;">
+        </div>
+        <div class="wibbly-wobbly">
+            <div class="wibbly-row">
+                <div class="timey-wimey">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="name">
+                </div>
+                <div class="timey-wimey">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" placeholder="age">
+                </div>
+                <div class="timey-wimey">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subjecct">
+                </div>
+            </div>
+            <div class="wibbly-row">
+                <div class="timey-wimey">
+                    <label for="dob">DOB:</label>
+                    <input type="text" id="dob" name="dob" placeholder="Date of Birth">
+                </div>
+                <div class="timey-wimey">
+                    <label for="class">Class:</label>
+                    <input type="text" id="class" name="class" placeholder="class">
+                </div>
+                <div class="timey-wimey">
+                    <label for="blood-group">Blood Group:</label>
+                    <input type="text" id="blood-group" name="blood-group" placeholder="Blood Group">
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div class="mainChoice">
+        <fieldset>
+            <legend>Religion:</legend>
+            <label><input required type="radio" name="religion" value="RC"> RC</label>
+            <label><input required type="radio" name="religion" value="Hindu"> Hindu</label>
+            <label><input required type="radio" name="religion" value="Christian"> Christian</label>
+            <label><input required type="radio" name="religion" value="Muslim"> Muslim</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Caste:</legend>
+            <label><input required type="radio" name="caste" value="SC/ST"> SC/ST</label>
+            <label><input required type="radio" name="caste" value="MBC"> MBC</label>
+            <label><input required type="radio" name="caste" value="BC"> BC</label>
+            <label><input required type="radio" name="caste" value="FC"> FC</label>
+        </fieldset>
+       
+        
+           
+        
+</div> 
+<label for="dalitChristian">Dalit christian</label>
+<input type="checkbox" name="dalitChristian">
+
+<div class="etcdetails-weird">
+    <div class="blorp-group">
+        <label for="fatherName" class="snazzle-label">Father Name</label>
+        <input required type="text" name="fatherName" placeholder="Father's Name" class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="parentOccupation" class="snazzle-label">Parent Occupation</label>
+        <input required type="text" name="parentOccupation" placeholder="Parent's Occupation" class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="parentAddress" class="snazzle-label">Address</label>
+        <textarea required name="parentAddress" placeholder="Parent's Address" class="wobble-textarea"></textarea>
+    </div>
+    <div class="blorp-group">
+        <label for="parentMobileNo" class="snazzle-label">Parent Mobile</label>
+        <input required type="tel" name="parentMobileNo" placeholder="Parent's Mobile No." class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="studentMobileNo" class="snazzle-label">Student Mobile No</label>
+        <input required type="tel" name="studentMobileNo" placeholder="Student's Mobile No." class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="pincode" class="snazzle-label">Pincode</label>
+        <input required type="text" name="pincode" placeholder="Pincode" class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="previousSchool" class="snazzle-label">Previous School</label>
+        <input required type="text" name="previousSchool" placeholder="Previous School" class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="residentLastYear" class="snazzle-label">Resident Last Year</label>
+        <input type="checkbox" name="residentLastYear" class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="previousHostelName" class="snazzle-label">Previous Hostel Name</label>
+        <input type="text" name="previousHostelName" placeholder="Previous Hostel Name" class="wobble-input">
+    </div>
+    <div class="blorp-group">
+        <label for="previousHostelPlace" class="snazzle-label">Previous Hostel Place</label>
+        <input type="text" name="previousHostelPlace" placeholder="Previous Hostel Place" class="wobble-input">
+    </div>
+</div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
